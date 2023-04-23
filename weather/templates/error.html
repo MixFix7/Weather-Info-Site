@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block title %}  Weather Django {% endblock %}
+
+{% block content %}
+
+<div class="container">
+    <div class="weather">
+      <div class="location">
+        <h1>Погода</h1>
+        <form action="{% url 'city_info' %}" method="GET">
+            <input type="text" name="typecity" placeholder="type your city..." {% if city %} value="{{city}}" {% endif %}>
+            <button></button>
+        </form>
+
+
+{% end block %}

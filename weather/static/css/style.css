@@ -1,0 +1,122 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1C1C1C; /* dark gray background */
+    color: #FFFFFF; /* white text color */
+  }
+  
+  #myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+  }
+
+  .input-wrapper {
+    position: relative;
+    width: 200px;
+  }
+  
+  button {
+    display: none;
+  }
+
+  input {
+    border: none;
+    border-bottom: 2px solid #ccc;
+    padding: 10px 15px;
+    color: #FFFFFF;
+    background-color: transparent;
+    transition: all 0.2s ease-in-out;
+    transform-origin: center;
+  }
+  
+  input:focus {
+    border-color: #1e90ff;
+    outline: none;
+    transform: scale(1.1);
+  }
+
+  .container {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+    transform: translateY(50px);
+    top: 0;
+    left: 0;
+    right: 0;
+
+    position: absolute;
+    z-index: 3;
+  }
+  
+  h1 {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-size: 3em;
+    color: white;  
+  }
+  
+  .input {
+    border-top: 1px solid #CCCCCC;
+    margin-top: 20px;
+    padding-top: 20px;
+  }
+
+  .weather {
+    background-color: #2B2B2B; /* dark gray box background */
+    padding: 20px;
+    width: auto;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(255,255,255,0.2); /* white box shadow */
+  }
+  
+  .location {
+    margin-bottom: 20px;
+  }
+  
+  .location h2 {
+    margin: 0;
+    font-size: 2em;
+  }
+  
+  .location p {
+    margin-top: 5px;
+    font-size: 1.2em;
+    color: #CCCCCC; /* light gray text color */
+  }
+  
+  .temperature {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .temperature img {
+    margin-right: 20px;
+  }
+  
+  .temperature h2 {
+    margin: 0;
+    font-size: 3em;
+  }
+  
+  .description {
+    border-top: 1px solid #CCCCCC; /* light gray border */
+    margin-top: 20px;
+    padding-top: 20px;
+  }
+  
+  .description h3 {
+    margin: 0;
+    font-size: 1.5em;
+  }
+  
+  .description p {
+    margin-top: 10px;
+    font-size: 1.2em;
+    color: #CCCCCC; /* light gray text color */
+  }
+
+  

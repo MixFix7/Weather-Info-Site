@@ -1,0 +1,77 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+<link rel="apple-touch-icon" sizes="180x180" href="static/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="static/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="static/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+
+{% block title %}  Weather Django {% endblock %}
+
+
+{% block content %}
+
+{% if city == None %}
+
+{% elif weather == "Clouds ☁" %}
+<video autoplay muted loop id="myVideo">
+    <source src="{% static 'videos/clouds.mp4' %}" type="video/mp4">
+</video>
+{% elif weather == "Thunderstorm ⚡" %}
+<video autoplay muted loop id="myVideo">
+    <source src="{% static 'videos/thunder.mp4' %}" type="video/mp4">
+</video>
+{% elif weather == "Sun ☀" %}
+<video autoplay muted loop id="myVideo">
+    <source src="{% static 'videos/sun.mp4' %}" type="video/mp4">
+</video>
+{% elif weather == "Rain ☔" %}
+<video autoplay muted loop id="myVideo">
+    <source src="{% static 'videos/rain.mp4' %}" type="video/mp4">
+</video>
+{% elif weather == "Downpour ☔" %}
+<video autoplay muted loop id="myVideo">
+    <source src="{% static 'videos/rain.mp4' %}" type="video/mp4">
+</video>
+{% elif weather == "Mist 🌁" %}
+<video autoplay muted loop id="myVideo">
+    <source src="{% static 'videos/mist.mp4' %}" type="video/mp4">
+</video>
+{% elif weather == "Snow 🌨" %}
+<video autoplay muted loop id="myVideo">
+    <source src="{% static 'videos/snow.mp4' %}" type="video/mp4">
+</video>
+
+{% endif %}
+
+
+<div class="container">
+    <div class="weather">
+      <div class="location">
+        <h1>Weather</h1>
+        <form action="{% url 'city_info' %}" method="GET">
+            <input type="text" name="typecity" placeholder="type your city..." {% if city %} value="{{city}}" {% endif %}>
+            <button></button>
+        </form>
+        {% if city == None %}
+            <h3>{{error}}</h3>
+        {% else %}
+        <div class="input">
+        </div>
+        <h2>City: {{city}} {{country}}</h2>
+        <h2>{{error}}</h2>
+        <p>date and time {{time}}</p>
+      </div>
+      <div class="description">
+        <h3>Weather: {{weather}}</h3>
+        <p>Temperature: {{temp}}°С</p>
+        <p>Wind speed: {{speed_of_wind}}км/год</p>
+        <p>Humidity {{humidity}}%<p>
+        <p>Pressure: {{pressure}}psi</p>
+      </div>
+    </div>
+  </div>
+        {% endif %}
+
+{% endblock %}
