@@ -69,4 +69,4 @@ To get started with Weather-Info-Site, follow these steps:
 
 ## License
 
-The Weather-Info-Site repository is open-source software licensed under the [Apache-2.0 license](https://opensource.org/licenses/Apache-2.0-license). Feel free to modify and distribute the code as per the license terms.
+The Weather-Info-Site repository is open-source software licensed under the [Apache-2.0 license](https://opensource.org/licenses/Apache). Feel free to modify and distribute the code as per the license terms.
