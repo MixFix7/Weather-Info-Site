@@ -23,43 +23,24 @@ Before running the Weather-Info-Site application, ensure that you have the follo
 To get started with Weather-Info-Site, follow these steps:
 
 1. Clone the repository:
-
    ```bash
    git clone https://github.com/your-username/Weather-Info-Site.git
    ```
-   
-   ```python
-   print("Hello World")
-   for i in range(len(list)):
-      if list[i] == 1:
-         return 45
-      else:
-         while True:
-            print("list[i]")
-   ```
-
 2. Navigate to the project directory:
-
    ```bash
    cd Weather-Info-Site
    ```
-
 3. Install the project dependencies:
-
    ```bash
    pip install -r requirements.txt
    ```
-
 4. Obtain a OpenWeatherMap API key:
 
    - Visit a weather service provider's website and sign up for an API key https://openweathermap.org/appid
    - Copy the API key provided by the weather service provider.
-
 5. Configure the API key:
-
-   - Open the `views.py` file located in the `weather` directory.
-   - Locate the `api_key` variable and replace `"enter api key from openweather"` with your actual weather API key.
-
+   - Open the views.py file located in the weather directory.
+   - Locate the api_key variable and replace "enter api key from openweather" with your actual weather API key.
 6. Run database migrations:
 
    ```bash
@@ -74,7 +55,7 @@ To get started with Weather-Info-Site, follow these steps:
 
 8. Access the Weather-Info-Site:
 
-   Open your web browser and visit [http://localhost:8000] to access the application.
+   Open your web browser and visit http://localhost:8000 to access the application.
 
 
 ## License
